@@ -1,5 +1,6 @@
 import { NativeModules, Platform } from 'react-native';
 import { KanonModule } from './kanon/KanonModule';
+import "reflect-metadata";
 const LINKING_ERROR =
   `The package 'react-native-credo-sql' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +

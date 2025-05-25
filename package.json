@@ -204,6 +204,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "bn.js": "^5.2.1",
+    "reflect-metadata": "^0.2.2",
     "yarn": "^1.22.22"
   }
 }

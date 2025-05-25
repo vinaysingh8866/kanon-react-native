@@ -10451,6 +10451,7 @@ __metadata:
     react-native: 0.75.2
     react-native-builder-bob: ^0.30.2
     react-native-sqlite-storage: ^5.0.0
+    reflect-metadata: ^0.2.2
     release-it: ^15.0.0
     rxjs: ^7.8.0
     tsyringe: ^4.8.0
