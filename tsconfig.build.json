@@ -1,4 +1,10 @@
 {
   "extends": "./tsconfig",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true
+    // react-native-builder-bob should handle outDir/declarationDir
+    // based on its output and targets configuration.
+  },
   "exclude": ["example", "lib"]
 }
