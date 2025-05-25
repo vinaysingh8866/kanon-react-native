@@ -1,13 +1,13 @@
 import { NativeModules, Platform } from 'react-native';
-import SQLWalletModule from './wallet/SQLWalletModule';
+import { KanonModule } from './kanon/KanonModule';
 const LINKING_ERROR =
   `The package 'react-native-credo-sql' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const CredoSql = NativeModules.CredoSql
-  ? NativeModules.CredoSql
+const Kanon = NativeModules.Kanon
+  ? NativeModules.Kanon
   : new Proxy(
       {},
       {
@@ -18,7 +18,7 @@ const CredoSql = NativeModules.CredoSql
     );
 
 export function multiply(a: number, b: number): Promise<number> {
-  return CredoSql.multiply(a, b);
+  return Kanon.multiply(a, b);
 }
 
-export { SQLWalletModule };
+export { KanonModule };
