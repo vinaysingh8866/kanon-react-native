@@ -1,6 +1,6 @@
 {
   "name": "kanon-react-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kanon React Native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
