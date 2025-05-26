@@ -23,3 +23,13 @@ export function multiply(a: number, b: number): Promise<number> {
 }
 
 export { KanonModule };
+
+// Export services and types for external dependency injection
+export { EthereumLedgerService, type IEthereumLedgerConfig } from './kanon/ledger';
+export { KanonDIDRegistrar, type KanonCreateResourceOptions } from './kanon/dids/KanonDidRegistrar';
+export { KanonDIDResolver } from './kanon/dids/KanonDidResolver';
+export { KanonAnonCredsRegistry } from './kanon/anoncreds/services/KanonAnonCredsRegistry';
+export { KanonModuleConfig, type KanonModuleConfigOptions, type NetworkConfig } from './kanon/KanonModuleConfig';
+
+// Export utilities
+export { parsekanonDid, type ParsedkanonDid } from './kanon/utils/identifiers';

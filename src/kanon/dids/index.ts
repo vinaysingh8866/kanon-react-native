@@ -1,2 +1,2 @@
-export { KanonDIDRegistrar } from "./KanonDidRegistrar";
+export { KanonDIDRegistrar, type KanonCreateResourceOptions } from "./KanonDidRegistrar";
 export { KanonDIDResolver } from "./KanonDidResolver";
