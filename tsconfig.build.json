@@ -2,7 +2,9 @@
   "extends": "./tsconfig",
   "compilerOptions": {
     "noEmit": false,
-    "declaration": true
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
     // react-native-builder-bob should handle outDir/declarationDir
     // based on its output and targets configuration.
   },
