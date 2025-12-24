@@ -178,10 +178,16 @@ export class KanonAnonCredsRegistry implements AnonCredsRegistry {
     const credDefJson = credentialDefinition[2]
     const credDefJsonObject = JSON.parse(credDefJson)
     console.log(credDefJsonObject, "credentialDefinitionjhgfjhg");
+
+    // Extract overlay data if present (OCA branding/meta stored on ledger)
+    const overlay = credDefJsonObject.data?.overlay;
+
     return {
       credentialDefinitionId: credentialDefinitionId,
       resolutionMetadata: {},
-      credentialDefinitionMetadata: {},
+      credentialDefinitionMetadata: {
+        overlay: overlay || undefined
+      },
       credentialDefinition: {
         issuerId: credDefJsonObject.data.issuerId,
         schemaId: credDefJsonObject.data.schemaId,
@@ -220,6 +226,11 @@ export class KanonAnonCredsRegistry implements AnonCredsRegistry {
 
 
     const credentialDefinition = options.credentialDefinition;
+
+    // Extract overlay from options if provided (custom extension for OCA support)
+    // @ts-ignore - overlay is a custom extension not in Credo's types
+    const overlay = options.overlay || options.options?.overlay;
+
     const credentialDefinitionResource = {
       id: uuid(),
       name: `${credentialDefinition.tag}-CredentialDefinition`,
@@ -233,7 +244,9 @@ export class KanonAnonCredsRegistry implements AnonCredsRegistry {
             name: credentialDefinition.tag,
             value: credentialDefinition.value
           }
-        }
+        },
+        // Include OCA overlay if provided (meta, branding)
+        ...(overlay && { overlay })
       },
       
       // @ts-ignore 
