@@ -1,6 +1,6 @@
 {
   "name": "kanon-react-native",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Kanon React Native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -34,7 +34,8 @@
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
-    "!**/.*"
+    "!**/.*",
+    ".npmvc"
   ],
   "scripts": {
     "example": "yarn workspace react-native-credo-sql-example",
@@ -43,7 +44,8 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "prepack": "npmvc attest --registry https://npmvc.com"
   },
   "keywords": [
     "react-native",
@@ -72,8 +74,8 @@
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-typescript": "^7.27.1",
     "@commitlint/config-conventional": "^17.0.2",
-    "@credo-ts/anoncreds": "0.5.15",
-    "@credo-ts/core": "0.5.15",
+    "@credo-ts/anoncreds": "0.5.17",
+    "@credo-ts/core": "0.5.17",
     "@evilmartians/lefthook": "^1.5.0",
     "@hyperledger/anoncreds-shared": "^0.3.1",
     "@hyperledger/aries-askar-react-native": "^0.2.3",
@@ -107,6 +109,9 @@
     "@types/react": "^18.2.44"
   },
   "peerDependencies": {
+    "@credo-ts/anoncreds": "^0.5.17",
+    "@credo-ts/core": "^0.5.17",
+    "ethers": "^6.13.0",
     "react": "*",
     "react-native": "*"
   },
@@ -209,9 +214,11 @@
     "version": "0.41.1"
   },
   "dependencies": {
-    "add": "^2.0.6",
-    "bn.js": "^5.2.1",
+    "@ajna-inc/kanon-sdk": "0.1.10",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.14.1",
     "reflect-metadata": "^0.2.2",
-    "yarn": "^1.22.22"
+    "rxjs": "^7.8.0",
+    "tsyringe": "^4.8.0"
   }
 }

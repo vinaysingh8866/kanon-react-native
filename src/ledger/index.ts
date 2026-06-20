@@ -1,0 +1,1 @@
+export { KanonClientService } from './KanonClientService'

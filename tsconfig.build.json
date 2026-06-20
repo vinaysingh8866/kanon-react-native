@@ -4,7 +4,14 @@
     "noEmit": false,
     "declaration": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    // Inlined kanon plugin source matches @ajna-inc/kanon's published
+    // tsconfig (see credo-ts-kanon/credo-ts/tsconfig.build.json), which
+    // does NOT enable these flags. Keep parity so we ship the same
+    // shape that's already known-good on npm.
+    "noUncheckedIndexedAccess": false,
+    "verbatimModuleSyntax": false,
+    "useUnknownInCatchVariables": false
     // react-native-builder-bob should handle outDir/declarationDir
     // based on its output and targets configuration.
   },

@@ -1,6 +1,0 @@
-export { KanonAnonCredsRegistry } from './anoncreds'
-export { KanonModule } from './KanonModule'
-export { KanonModuleConfig, type KanonModuleConfigOptions, type NetworkConfig } from './KanonModuleConfig'
-export { EthereumLedgerService, type IEthereumLedgerConfig } from './ledger'
-export { KanonDIDRegistrar, KanonDIDResolver, type KanonCreateResourceOptions } from './dids'
-export { parsekanonDid, type ParsedkanonDid } from './utils/identifiers'

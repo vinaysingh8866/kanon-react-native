@@ -1,0 +1,32 @@
+{
+  "schema": "https://npmvc.com/schemas/attestation-bundle/v1",
+  "package": {
+    "name": "kanon-react-native",
+    "version": "0.0.12"
+  },
+  "bundledAt": "2026-05-01T08:31:52.636Z",
+  "envelopes": [
+    {
+      "payloadType": "application/vc+json",
+      "payload": "eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL25wbXZjLmNvbS9zY2hlbWFzL3N1cHBseWNoYWluL3YxIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImJ1aWxkQ29tbWFuZCI6IiIsImJ1aWxkZXIiOnsiaWQiOiJkaWQ6a2V5Ono2TWtoSjVZQlNkQkxISEpiamk0NWtpSm5SZExVRFB1VFZpN2RQODRNalN1RXVjbyIsImtpbmQiOiJsb2NhbCJ9LCJpZCI6InBrZzpucG0va2Fub24tcmVhY3QtbmF0aXZlQDAuMC4xMiIsInJlcHJvZHVjaWJsZSI6ZmFsc2UsInNsc2FMZXZlbCI6Miwic291cmNlUmVwbyI6eyJjb21taXQiOiJhYTQyNzgzZTY4MDUzMjM0NzMxOGYxMmFhNzAxYjZkNGZjNDZhMTdhIiwidHlwZSI6ImdpdCIsInVybCI6ImdpdCtodHRwczovL2dpdGh1Yi5jb20vRGlnaUNyZWQtSG9sZGluZ3MvcmVhY3QtbmF0aXZlLWNyZWRvLXNxbC5naXQifSwidGFyYmFsbCI6eyJkaWdlc3QiOnt9LCJuYW1lIjoia2Fub24tcmVhY3QtbmF0aXZlIiwidmVyc2lvbiI6IjAuMC4xMiJ9LCJ0b29sY2hhaW4iOnsibm9kZSI6IjIwLjE5LjUiLCJucG0iOiIxMC44LjIifX0sImlkIjoidXJuOnV1aWQ6ZGNlY2FhZjgtZGQ3Ni00ZmIyLThlZWEtMDk1Njc5NGE5NDEyIiwiaXNzdWVyIjoiZGlkOmtleTp6Nk1raEo1WUJTZEJMSEhKYmppNDVraUpuUmRMVURQdVRWaTdkUDg0TWpTdUV1Y28iLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiUHJvdmVuYW5jZUNyZWRlbnRpYWwiXSwidmFsaWRGcm9tIjoiMjAyNi0wNS0wMVQwODozMTo1Mi4zMTFaIn0=",
+      "signatures": [
+        {
+          "keyid": "did:key:z6MkhJ5YBSdBLHHJbji45kiJnRdLUDPuTVi7dP84MjSuEuco#z6MkhJ5YBSdBLHHJbji45kiJnRdLUDPuTVi7dP84MjSuEuco",
+          "alg": "Ed25519",
+          "sig": "Qr+3HMTo6TTFS2VK9DYCQgTs5cXOtjqGSkyTG7iKY/pZ2ozXeQhSmRxucuJqDh4EL6/H5xIR+HmwwH/dmMc/CQ=="
+        }
+      ]
+    },
+    {
+      "payloadType": "application/vc+json",
+      "payload": "eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL25wbXZjLmNvbS9zY2hlbWFzL3N1cHBseWNoYWluL3YxIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImRlY2xhcmVkU2NyaXB0cyI6WyJleGFtcGxlIiwidGVzdCIsInR5cGVjaGVjayIsImxpbnQiLCJjbGVhbiIsInByZXBhcmUiLCJyZWxlYXNlIiwicHJlcGFjayJdLCJpZCI6InBrZzpucG0va2Fub24tcmVhY3QtbmF0aXZlQDAuMC4xMiIsInBvc3RJbnN0YWxsUG9saWN5IjoiZm9yYmlkZGVuIiwidGFyYmFsbCI6eyJkaWdlc3QiOnt9LCJuYW1lIjoia2Fub24tcmVhY3QtbmF0aXZlIiwidmVyc2lvbiI6IjAuMC4xMiJ9LCJ3aGl0ZWxpc3RlZFNjcmlwdHMiOltdfSwiaWQiOiJ1cm46dXVpZDoyMDBlMzY4My02MTRiLTRmOGYtOWU4NS0zNjkwNDRiODMzMGMiLCJpc3N1ZXIiOiJkaWQ6a2V5Ono2TWtoSjVZQlNkQkxISEpiamk0NWtpSm5SZExVRFB1VFZpN2RQODRNalN1RXVjbyIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiLCJMaWZlY3ljbGVQb2xpY3lDcmVkZW50aWFsIl0sInZhbGlkRnJvbSI6IjIwMjYtMDUtMDFUMDg6MzE6NTIuMzMwWiJ9",
+      "signatures": [
+        {
+          "keyid": "did:key:z6MkhJ5YBSdBLHHJbji45kiJnRdLUDPuTVi7dP84MjSuEuco#z6MkhJ5YBSdBLHHJbji45kiJnRdLUDPuTVi7dP84MjSuEuco",
+          "alg": "Ed25519",
+          "sig": "kzIWxvMLq30WptMqVZj8RHFiOcbGXwGtAizoeQtSuzu2OseRDrUGdpUdINJ+CIjk7z4ne21zAMvp+Vn1483aCA=="
+        }
+      ]
+    }
+  ]
+}
